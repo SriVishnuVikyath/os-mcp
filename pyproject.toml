@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "os-mcp"
+version = "1.0.0"
+description = "MCP server for laptop filesystem interaction"
+requires-python = ">=3.10"
+dependencies = ["mcp>=1.0.0"]
+
+[project.scripts]
+os-mcp = "server:mcp.run"
